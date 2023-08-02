@@ -1,3 +1,4 @@
+import SupabaseListener from "./components/Organisms/Common/SupabaseListener";
 import "./globals.css";
 import React from "react";
 
@@ -13,7 +14,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja-jp">
-      <body>{children}</body>
+      <body>
+        {/* {children} */}
+        <div className="flex flex-col min-h-screen max-w-screen-2xl mx-auto">
+          <SupabaseListener />
+          <main className="container  px-1 py-5">{children}</main>
+          <footer className="py-5">
+            <div className="text-center text-sm">
+              Copyright © All rights reserved | Sickboy
+            </div>
+          </footer>
+        </div>
+      </body>
     </html>
   );
 }

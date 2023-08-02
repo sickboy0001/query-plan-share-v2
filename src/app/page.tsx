@@ -6,9 +6,9 @@ import Start from "./components/Organisms/Top/Start";
 
 export default function Home() {
   return (
-    <main className="">
-      <div>test</div>
+    <div className="text-center text-xl">
+      {/* {session ? <div>ログイン済</div> : <div>未ログイン</div>} */}
       <Start></Start>
-    </main>
+    </div>
   );
 }

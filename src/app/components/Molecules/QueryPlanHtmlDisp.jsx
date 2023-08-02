@@ -30,6 +30,7 @@ export default function QueryPlanHtmlDisp(props) {
   useEffect(() => {
     if (typeof QP !== "undefined") {
       QP.showPlan(document.getElementById("container"), sqlplan);
+      // QP.drawLines(document.getElementById("container"));
     }
 
   }, [sqlplan]);
