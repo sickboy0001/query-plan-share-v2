@@ -50,11 +50,6 @@ const Menu = [
 // プロフィール
 const Start = () => {
   let markdownString = description[0];
-  // let markdownString = "";
-  // markdownString = `- headind
-  // - headind
-  // - headind
-  // `;
 
   return (
     <div>
